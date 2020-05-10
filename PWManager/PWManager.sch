@@ -43,8 +43,8 @@ $Comp
 L Connector:USB_A J3
 U 1 1 5EAD66B2
 P 8850 2850
-F 0 "J3" H 8907 3317 50  0000 C CNN
-F 1 "UE27AC54100" H 8907 3226 50  0000 C CNN
+F 0 "J3" H 8850 3300 50  0000 C CNN
+F 1 "UE27AC54100" H 8850 3200 50  0000 C CNN
 F 2 "Connector_USB:USB_A_Stewart_SS-52100-001_Horizontal" H 9000 2800 50  0001 C CNN
 F 3 " ~" H 9000 2800 50  0001 C CNN
 	1    8850 2850
@@ -589,28 +589,6 @@ Wire Wire Line
 	8000 3350 8750 3350
 Wire Wire Line
 	7750 3350 7900 3350
-$Comp
-L power:+5V #PWR029
-U 1 1 5EB86A5C
-P 8300 2650
-F 0 "#PWR029" H 8300 2500 50  0001 C CNN
-F 1 "+5V" V 8315 2778 50  0000 L CNN
-F 2 "" H 8300 2650 50  0001 C CNN
-F 3 "" H 8300 2650 50  0001 C CNN
-	1    8300 2650
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+5V #PWR031
-U 1 1 5EB876AA
-P 9150 2650
-F 0 "#PWR031" H 9150 2500 50  0001 C CNN
-F 1 "+5V" V 9165 2778 50  0000 L CNN
-F 2 "" H 9150 2650 50  0001 C CNN
-F 3 "" H 9150 2650 50  0001 C CNN
-	1    9150 2650
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	7750 3350 7750 3850
 Wire Wire Line
@@ -904,7 +882,7 @@ $EndComp
 Wire Wire Line
 	6700 750  6700 850 
 Text GLabel 6950 1150 2    50   Input ~ 0
-RST
+RSTB
 Text GLabel 6450 1750 2    50   Input ~ 0
 P2_0
 Wire Wire Line
@@ -1017,25 +995,25 @@ Wire Notes Line
 	7350 500  7350 4100
 Text Notes 4650 4050 0    50   ~ 0
 EEPROM
-Text GLabel 1500 3150 0    50   Input ~ 0
+Text GLabel 4250 3250 2    50   Input ~ 0
 W
-Text GLabel 1500 3250 0    50   Input ~ 0
+Text GLabel 4250 3350 2    50   Input ~ 0
 Hold
-Text GLabel 1500 3350 0    50   Input ~ 0
+Text GLabel 4250 3050 2    50   Input ~ 0
 S
-Text GLabel 1500 3450 0    50   Input ~ 0
+Text GLabel 4250 2850 2    50   Input ~ 0
 C
-Text GLabel 1500 3550 0    50   Input ~ 0
+Text GLabel 4250 2750 2    50   Input ~ 0
 D
-Text GLabel 1500 3650 0    50   Input ~ 0
+Text GLabel 4250 2950 2    50   Input ~ 0
 Q
-Text GLabel 1500 3750 0    50   Input ~ 0
+Text GLabel 2250 3250 0    50   Input ~ 0
 TXD
-Text GLabel 1500 3850 0    50   Input ~ 0
+Text GLabel 2250 3150 0    50   Input ~ 0
 RXD
-Text GLabel 1500 3950 0    50   Input ~ 0
-RST
-Text GLabel 1500 4050 0    50   Input ~ 0
+Text GLabel 2250 2350 0    50   Input ~ 0
+RSTB
+Text GLabel 3650 1450 1    50   Input ~ 0
 P2_0
 $Comp
 L Device:R_Small_US R4
@@ -1105,11 +1083,11 @@ Wire Notes Line
 	6350 5200 6350 4100
 Text Notes 4650 5150 0    50   ~ 0
 RGB
-Text GLabel 1500 4150 0    50   Input ~ 0
+Text GLabel 3550 4350 3    50   Input ~ 0
 R
-Text GLabel 1500 4250 0    50   Input ~ 0
+Text GLabel 3450 4350 3    50   Input ~ 0
 G
-Text GLabel 1500 4350 0    50   Input ~ 0
+Text GLabel 3350 4350 3    50   Input ~ 0
 B
 Wire Wire Line
 	7700 1800 7800 1800
@@ -1343,11 +1321,11 @@ Connection ~ 9100 1200
 Wire Wire Line
 	9200 1650 9100 1650
 Connection ~ 9100 1650
-Text GLabel 1500 4450 0    50   Input ~ 0
+Text GLabel 2850 4350 3    50   Input ~ 0
 S0
-Text GLabel 1500 4550 0    50   Input ~ 0
+Text GLabel 2750 4350 3    50   Input ~ 0
 S1
-Text GLabel 1500 4650 0    50   Input ~ 0
+Text GLabel 2650 4350 3    50   Input ~ 0
 S2
 Wire Notes Line
 	7350 2250 9550 2250
@@ -1398,7 +1376,7 @@ U 1 1 5EE573D7
 P 7850 3750
 F 0 "D2" H 8400 4015 50  0000 C CNN
 F 1 "824011" H 8400 3924 50  0000 C CNN
-F 2 "SamacSys_Parts:SOT95P280X145-5N" H 8800 3850 50  0001 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 8800 3850 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/824011.pdf" H 8800 3750 50  0001 L CNN
 F 4 "Wurth Elektronik 824011 Dual Uni-Directional TVS Diode Array, 5-Pin SOT-23" H 8800 3650 50  0001 L CNN "Description"
 F 5 "1.45" H 8800 3550 50  0001 L CNN "Height"
@@ -1430,4 +1408,98 @@ F 9 "BM71BLES1FC2-0B04AA" H 6200 450 50  0001 L CNN "Manufacturer_Part_Number"
 	1    5050 1050
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:+5V #PWR029
+U 1 1 5EB30A8C
+P 8400 2350
+F 0 "#PWR029" H 8400 2200 50  0001 C CNN
+F 1 "+5V" V 8415 2478 50  0000 L CNN
+F 2 "" H 8400 2350 50  0001 C CNN
+F 3 "" H 8400 2350 50  0001 C CNN
+	1    8400 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Small_ALT D3
+U 1 1 5EB316A8
+P 8350 2500
+F 0 "D3" V 8304 2568 50  0000 L CNN
+F 1 "CUS08F30" V 8550 2350 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" V 8350 2500 50  0001 C CNN
+F 3 "~" V 8350 2500 50  0001 C CNN
+	1    8350 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8350 2600 8350 2650
+Wire Wire Line
+	8350 2650 8300 2650
+Wire Wire Line
+	8350 2400 8350 2350
+Wire Wire Line
+	8350 2350 8400 2350
+Text Notes 550  7000 0    50   ~ 0
+https://www.digikey.com/product-detail/en/toshiba-semiconductor-and-storage/CUS08F30-H3F/CUS08F30H3FCT-ND/5114376
+$Comp
+L Device:D_Small_ALT D4
+U 1 1 5EB504D8
+P 9200 2500
+F 0 "D4" V 9154 2568 50  0000 L CNN
+F 1 "CUS08F30" V 9400 2350 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" V 9200 2500 50  0001 C CNN
+F 3 "~" V 9200 2500 50  0001 C CNN
+	1    9200 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR031
+U 1 1 5EB51000
+P 9250 2350
+F 0 "#PWR031" H 9250 2200 50  0001 C CNN
+F 1 "+5V" V 9265 2478 50  0000 L CNN
+F 2 "" H 9250 2350 50  0001 C CNN
+F 3 "" H 9250 2350 50  0001 C CNN
+	1    9250 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9150 2650 9200 2650
+Wire Wire Line
+	9200 2650 9200 2600
+Wire Wire Line
+	9200 2400 9200 2350
+Wire Wire Line
+	9200 2350 9250 2350
+Wire Wire Line
+	3650 1450 3650 1550
+Wire Wire Line
+	2250 3150 2350 3150
+Wire Wire Line
+	2250 3250 2350 3250
+Wire Wire Line
+	2650 4350 2650 4250
+Wire Wire Line
+	2750 4350 2750 4250
+Wire Wire Line
+	2850 4350 2850 4250
+Wire Wire Line
+	2250 2350 2350 2350
+Wire Wire Line
+	4250 2750 4150 2750
+Wire Wire Line
+	4150 2850 4250 2850
+Wire Wire Line
+	4250 2950 4150 2950
+Wire Wire Line
+	4150 3050 4250 3050
+Wire Wire Line
+	3350 4350 3350 4250
+Wire Wire Line
+	3450 4350 3450 4250
+Wire Wire Line
+	3550 4350 3550 4250
+Wire Wire Line
+	4250 3250 4150 3250
+Wire Wire Line
+	4250 3350 4150 3350
 $EndSCHEMATC
